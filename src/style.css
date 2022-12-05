@@ -1,0 +1,23 @@
+@custom-media --narrow-window (max-width: 600px);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* CSS Nesting Module */
+/* https://www.w3.org/TR/css-nesting-1/ */
+body {
+  color: red;
+  .title {
+    color: green;
+  }
+}
+/* Custom Media Queries */
+/* https://www.w3.org/TR/mediaqueries-5/#custom-mq */
+@media (--narrow-window) {
+  body {
+    .title {
+      color: blue;
+    }
+  }
+}
